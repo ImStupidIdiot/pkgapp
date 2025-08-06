@@ -20,3 +20,10 @@ dist/
 # Logs and databases
 *.log
 *.sqlite3
+
+# Ignore private keys and sensitive files
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
