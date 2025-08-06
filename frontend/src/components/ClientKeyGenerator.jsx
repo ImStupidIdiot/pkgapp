@@ -39,7 +39,7 @@ const ClientKeyGenerator = () => {
   };
 
   return (
-    <div className="client-key-generator">
+    <div className="form-container">
       <h2>Generate Named Client Key</h2>
       <div>(Spaces will be ignored)</div>
       <input

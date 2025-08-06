@@ -12,16 +12,20 @@ function App() {
   return (
     <div className="App">
       <h1>Aircraft Software Tool</h1>
+      <div className="form-container">
       <h2> Sender Side </h2>
       <ClientKeyGenerator />
       <RetrieveClientKey />
       <EncryptSoftwareUploader />
       <SaveAirplaneKey />
+      </div>
+      <div className="form-container">
       <h2> Reciever Side </h2>
       <AirplaneKeyGenerator />
       <RetrieveAirplanePublicKey />
       <StoreClientKey />
       <DecryptPackageUploader />
+      </div>
     </div>
   );
 }

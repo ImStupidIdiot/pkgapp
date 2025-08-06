@@ -15,6 +15,7 @@ const RetrieveClientKey = () => {
       setError('Please enter a client name.');
       return;
     }
+  
 
     setLoading(true);
     try {
@@ -35,7 +36,7 @@ const RetrieveClientKey = () => {
   };
 
   return (
-    <div className="client-key-generator">
+    <div className="form-container">
       <h2>Retrieve Client Public Key</h2>
       <input
         type="text"
