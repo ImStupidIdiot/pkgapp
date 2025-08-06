@@ -1,0 +1,130 @@
+/* App.css */
+
+/* Global body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container for all forms */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Group each label + input/select */
+.form-group {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Text inputs and selects */
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  padding: 10px 14px;
+  font-size: 1.1rem;
+  border: 1.8px solid #bbb;
+  border-radius: 6px;
+  transition: border-color 0.25s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3a86ff;
+  box-shadow: 0 0 6px #a3c1ff88;
+}
+
+/* Textarea specifically (for keys display) */
+textarea {
+  font-family: monospace;
+  white-space: pre-wrap;
+  min-height: 140px;
+  max-height: 280px;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* Buttons */
+button {
+  background-color: #3a86ff;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  min-width: 160px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2f6ad9;
+}
+
+button:disabled {
+  background-color: #a3b8ff88;
+  cursor: default;
+}
+
+/* Error messages */
+.error, 
+p[style*="color: red"] {
+  margin-top: 8px;
+  color: #cc3c3c;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Additional small text under headers or inputs */
+small, div {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Center and space out key display headers */
+h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+}
